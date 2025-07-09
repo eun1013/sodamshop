@@ -1,0 +1,22 @@
+[
+  {
+    "idx": 1,
+    "title": "초록 의자",
+    "img": "/images/Product/SOPA.png"
+  },
+  {
+    "idx": 2,
+    "title": "회색 소파",
+    "img": "/images/Product/SOPA2.png"
+  },
+  {
+    "idx": 3,
+    "title": "커튼",
+    "img": "/images/Product/CURTAIN.png"
+  },
+  {
+    "idx": 4,
+    "title": "책장 선반",
+    "img": "/images/Product/SHELF.png"
+  }
+]
