@@ -1,11 +1,18 @@
+import { useState } from "react";
+import Banner from "./Banner";
 import Gnb from "./Gnb";
-import "./App.scss";
-import Banner from "./Components/Banner";
 
 const App = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  
+  const handleMenuToggle = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+  
   return (
     <div>
-      {/* <Banner/> */}<Gnb />
+      <Banner onMenuToggle={handleMenuToggle} />
+      <Gnb isOpen={isMenuOpen} />
     </div>
   );
 };

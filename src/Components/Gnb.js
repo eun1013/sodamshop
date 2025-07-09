@@ -1,16 +1,6 @@
-import { useState } from "react";
-import { MdOutlineMenu } from "react-icons/md";
-
-const Gnb = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  
+const Gnb = ({ isOpen }) => {
   return (
     <nav className={isOpen ? "mobile-open" : ""}>
-      <div className="menu-btn">
-        <button onClick={() => setIsOpen(!isOpen)}>
-          <MdOutlineMenu />
-        </button>       
-      </div>
       <div className="menu-wrapper">
         <ul className="menu">
           <li>New</li>
