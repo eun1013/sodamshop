@@ -5,7 +5,7 @@
   overflow: auto;
 
   h2 {
-    @include font-sub;
+    @include font-ko-body;
     text-align: left;
     border-bottom: 1px solid #999;
     padding-bottom: 20px;
@@ -41,6 +41,7 @@
 
       h3, h4 {
         font-weight: normal;
+        @include font-ko-small
       }
 
       h4 {
@@ -163,7 +164,7 @@
   flex-direction: column;
 
   button {
-    @include btn-style(var(--color-primary));
+    @include font-ko-btn;
     width: 100%;
     padding: 0.5rem 9rem;
     margin-top: 20px;
@@ -180,9 +181,9 @@
     color: var(--color-black);
 
     p {
+      @include font-En-sub;
       font-weight: bolder;
       color: #222;
-      font-size: 1.3rem;
       width: 120%;
       @include tablet {
         font-size: 1.8rem;
@@ -190,6 +191,7 @@
     }
 
     h3 {
+      @include font-ko-body;
       width: 120%;
       text-align: right;
       @include tablet {
