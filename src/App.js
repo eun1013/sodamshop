@@ -1,9 +1,11 @@
 import Gnb from "./Gnb";
-import "./app.scss";
+import "./app.scss";import "./App.scss";
+import Banner from "./Components/Banner";
+
 const App = () => {
   return (
     <div>
-      <Gnb />
+      {/* <Banner/> */}<Gnb />
     </div>
   );
 };
